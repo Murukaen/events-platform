@@ -1,0 +1,18 @@
+<div id="main_message" class="jumbotron">
+    <div class="container">
+        <h1> What are you up to? </h1>
+        <p> Find out what is going on in your city </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="btn btn-default" ng-repeat="event in events" class="col-md-1">
+            {{event.title}}
+            <br />
+            {{event.location}}
+        </div>
+    </div>
+</div>
+<div class=clearfix></div>
+<br />
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events Platform</title>
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css' />
+    <base href="/" />
+  </head>
+  <body ng-app="events">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Cluj Events</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a ui-sref="home">View</a></li>
+          <li><a ui-sref="create-event">Create Event</a></li>
+        </ul>
+      </div> 
+    </nav>
+    <ui-view> </ui-view>
+    <script type="text/javascript" src="/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="/lib/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="client.app.js"></script>
+    <script type="text/javascript" src="client.events.service.js"></script>
+    <script type="text/javascript" src="client.events.routes.js"></script> 
+    <script type="text/javascript" src="client.home.ctrl.js"></script>
+    <script type="text/javascript" src="client.create-event.ctrl.js"></script>
+  </body>
+</html>
